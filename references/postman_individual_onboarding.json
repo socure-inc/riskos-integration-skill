@@ -1,0 +1,217 @@
+{
+    "testcases": 
+    [
+        {
+            "account_id": "12345",
+            "workflow_name": "individual_onboarding_1",
+            "request": {
+                "id": "Ananda_Fraud",
+                "timestamp": "2024-12-24T17:44:11.586193Z",
+                "workflow": "api_individual_onboarding",
+                "data": {
+                    "line_of_business": "test1",
+                    "channel": "mobile",
+                    "individual": {
+                        "additional_addresses": [
+                            {
+                                "locality": "californiaa",
+                                "type": "billing",
+                                "postal_code": "12343",
+                                "country": "US",
+                                "line_1": "Address line 1",
+                                "line_2": "Address line 2",
+                                "major_admin_division": "AL"
+                            }
+                        ],
+                        "id": "129",
+                        "given_name": "Ananda",
+                        "family_name": "test",
+                        "date_of_birth": "1958-01-31",
+                        "national_id": "700-01-3784",
+                        "phone_number": "+12037986508",
+                        "address": {
+                            "type": "HOME",
+                            "line_1": "2 Moran Ave",
+                            "line_2": "Address Line 2",
+                            "locality": "Danbury",
+                            "major_admin_division": "CT",
+                            "country": "US",
+                            "postal_code": "068100000"
+                        },
+                        "email": "j.smith@example.com"
+                    },
+                    "ip_address": "10.10.10.10",
+                    "custom": {
+                        "customer_user_id": "324324",
+                        "payments": {
+                            "recipient_country": "US",
+                            "payment_type": "ach",
+                            "disbursement_type": "billpay"
+                        },
+                        "merchant_details": {
+                            "id": 1234567,
+                            "category": "Shoes, Clothing"
+                        },
+                        "shipping_details": {
+                            "first_name": "Dwayne",
+                            "sur_name": "Denver",
+                            "phone": "+13475550100",
+                            "email": "dwayne.denver@example.com"
+                        },
+                        "order_channel": "digital",
+                        "order_amount": "1234.56",
+                        "submission_date": "20181220",
+                        "prev_order_count": "12",
+                        "prev_unpaid_order_count": "19",
+                        "last_order_date": "20170417",
+                        "geo_code": "40.755688, -74.045986",
+                        "country_of_origin": "US",
+                        "account_creation_date": "20181221"
+                    },
+                    "business": {
+                        "name": "Socure india"
+                    }
+                }
+            },
+            "response": {
+                "id": "Ananda_Fraud",
+                "workflow": "api_individual_onboarding",
+                "workflow_id": "5ea4ffdf-9b8c-4e01-89ed-4e0728c7b745",
+                "workflow_version": "313.0.0",
+                "eval_source": "API",
+                "eval_id": "2be9798f-b30f-4f93-951f-5146f27b71af",
+                "eval_start_time": "2026-01-21T05:50:51.449964713Z",
+                "eval_end_time": "2026-01-21T05:50:51.510719802Z",
+                "decision": "REVIEW",
+                "decision_at": "2026-01-21T05:50:51.510606782Z",
+                "status": "OPEN",
+                "sub_status": "In Review",
+                "tags": [
+                    "aeropay test"
+                ],
+                "notes": "",
+                "review_queues": [
+                    "Default Queue"
+                ],
+                "data_enrichments": [
+                    {
+                        "enrichment_name": "Aeropay Create or Retrieve User",
+                        "enrichment_endpoint": "https://api.sandbox-pay.aero.inc/user",
+                        "enrichment_provider": "RestAPI",
+                        "status_code": 401,
+                        "request": {
+                            "are_tps_stored_remote": false,
+                            "computed_entities": null,
+                            "created_at": "2026-01-21T05:50:51.449964713Z",
+                            "created_by": "ACC-5BIIPMP2LH_API_KEY",
+                            "data": {
+                                "business": {
+                                    "name": "Socure india"
+                                },
+                                "channel": "mobile",
+                                "custom": {
+                                    "account_creation_date": "20181221",
+                                    "country_of_origin": "US",
+                                    "customer_user_id": "324324",
+                                    "geo_code": "40.755688, -74.045986",
+                                    "last_order_date": "20170417",
+                                    "merchant_details": {
+                                        "category": "Shoes, Clothing",
+                                        "id": 1234567
+                                    },
+                                    "order_amount": "1234.56",
+                                    "order_channel": "digital",
+                                    "payments": {
+                                        "disbursement_type": "billpay",
+                                        "payment_type": "ach",
+                                        "recipient_country": "US"
+                                    },
+                                    "prev_order_count": "12",
+                                    "prev_unpaid_order_count": "19",
+                                    "shipping_details": {
+                                        "email": "dwayne.denver@example.com",
+                                        "first_name": "Dwayne",
+                                        "phone": "+13475550100",
+                                        "sur_name": "Denver"
+                                    },
+                                    "submission_date": "20181220"
+                                },
+                                "individual": {
+                                    "additional_addresses": [
+                                        {
+                                            "country": "US",
+                                            "line_1": "Address line 1",
+                                            "line_2": "Address line 2",
+                                            "locality": "californiaa",
+                                            "major_admin_division": "AL",
+                                            "postal_code": "12343",
+                                            "type": "billing"
+                                        }
+                                    ],
+                                    "address": {
+                                        "country": "US",
+                                        "line_1": "2 Moran Ave",
+                                        "line_2": "Address Line 2",
+                                        "locality": "Danbury",
+                                        "major_admin_division": "CT",
+                                        "postal_code": "068100000",
+                                        "type": "HOME"
+                                    },
+                                    "date_of_birth": "1958-01-31",
+                                    "email": "j.smith@example.com",
+                                    "family_name": "test",
+                                    "given_name": "Ananda",
+                                    "id": "129",
+                                    "national_id": "700-01-3784",
+                                    "phone_number": "+12037986508"
+                                },
+                                "ip_address": "10.10.10.10",
+                                "line_of_business": "test1"
+                            },
+                            "decision_at": "0001-01-01T00:00:00Z",
+                            "eval_at": "2026-01-21T05:50:51.449964713Z",
+                            "eval_end_time": "0001-01-01T00:00:00Z",
+                            "eval_id": "2be9798f-b30f-4f93-951f-5146f27b71af",
+                            "eval_source": "API",
+                            "evaluation_status": "",
+                            "fraud_type": "sc_onboarding",
+                            "id": "Ananda_Fraud",
+                            "namespace": "acc-5BiIPMp2Lh",
+                            "old_data_version": false,
+                            "pii_fields_tokenized": {},
+                            "resume_events": [],
+                            "reviewer_updated_at": "0001-01-01T00:00:00Z",
+                            "score": null,
+                            "score_cards": [],
+                            "timestamp": "2024-12-24T17:44:11.586193Z",
+                            "updated_at": "2026-01-21T05:50:51.449964713Z",
+                            "updated_by": "ACC-5BIIPMP2LH_API_KEY",
+                            "version": "1.0",
+                            "workflow": "api_individual_onboarding",
+                            "workflow_decision": "",
+                            "workflow_id": "5ea4ffdf-9b8c-4e01-89ed-4e0728c7b745",
+                            "workflow_mode": "LIVE",
+                            "workflow_version": "313.0.0"
+                        },
+                        "response": {
+                            "response": "{\"message\":\"Unauthorized\"}"
+                        },
+                        "is_source_cache": false,
+                        "total_attempts": 1
+                    }
+                ],
+                "computed": {
+                    "aeropayusererror": {
+                        "error_code": "EXTERNAL_ERROR",
+                        "error_msg": "{\"message\":\"Unauthorized\"}",
+                        "http_status": 401,
+                        "is_retryable": false
+                    }
+                },
+                "eval_status": "evaluation_completed",
+                "environment_name": "Sandbox"
+            },
+            "decision": "ACCEPT"
+        }
+    ]
+}
