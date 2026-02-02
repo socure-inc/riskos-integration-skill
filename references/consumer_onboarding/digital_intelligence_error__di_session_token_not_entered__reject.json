@@ -1,0 +1,143 @@
+{
+  "name": "Digital Intelligence Error - DI Session Token Not Entered | REJECT",
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "bearer": [
+        {
+          "key": "token",
+          "value": "86624c51-86c6-4b68-be5b-6860dfc82d60",
+          "type": "string"
+        }
+      ]
+    },
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\": \"consumer_onboarding\",\n    \"data\": {\n        \"individual\": {\n            \"id\": \"ID_{{$randomUUID}}\",\n            \"given_name\": \"Kara\",\n            \"family_name\": \"Ste\",\n            \"national_id\": \"888478678\",\n            \"date_of_birth\": \"1992-06-16\",\n            \"email\": \"kata.ste@example.com\",\n            \"phone_number\": \"+19998876227\",\n            \"address\": {\n                \"line_1\": \"4302 Beechwood Avenue\",\n                \"line_2\": \"\",\n                \"locality\": \"Piscataway\",\n                \"major_admin_division\": \"NJ\",\n                \"country\": \"US\",\n                \"postal_code\": \"08854\"\n            },\n            \"di_session_token\": \"\"\n        }\n    }\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+      "protocol": "https",
+      "host": [
+        "riskos",
+        "sandbox",
+        "socure",
+        "com"
+      ],
+      "path": [
+        "api",
+        "evaluation"
+      ]
+    }
+  },
+  "response": [
+    {
+      "name": "Digital Intelligence Error - DI Session Token Not Entered | REJECT",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\": \"consumer_onboarding\",\n    \"data\": {\n        \"individual\": {\n            \"id\": \"ID_{{$randomUUID}}\",\n            \"given_name\": \"Kara\",\n            \"family_name\": \"Ste\",\n            \"national_id\": \"888478678\",\n            \"date_of_birth\": \"1992-06-16\",\n            \"email\": \"kata.ste@example.com\",\n            \"phone_number\": \"+19998876227\",\n            \"address\": {\n                \"line_1\": \"4302 Beechwood Avenue\",\n                \"line_2\": \"\",\n                \"locality\": \"Piscataway\",\n                \"major_admin_division\": \"NJ\",\n                \"country\": \"US\",\n                \"postal_code\": \"08854\"\n            },\n            \"di_session_token\": \"\"\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+          "protocol": "https",
+          "host": [
+            "riskos",
+            "sandbox",
+            "socure",
+            "com"
+          ],
+          "path": [
+            "api",
+            "evaluation"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, max-age=0"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "'self'"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Day",
+          "value": "1000"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Window",
+          "value": "10"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Day",
+          "value": "999"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Window",
+          "value": "9"
+        },
+        {
+          "key": "X-Request-Id",
+          "value": "c82eb081-bbd1-40c3-a1ab-ba8fea44d5d2"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 01 Feb 2026 00:33:22 GMT"
+        },
+        {
+          "key": "Content-Length",
+          "value": "1661"
+        },
+        {
+          "key": "Via",
+          "value": "1.1 google"
+        },
+        {
+          "key": "Alt-Svc",
+          "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+        }
+      ],
+      "cookie": [],
+      "body": "{\n    \"id\": \"92c77e86-7214-4de4-aabf-065d23f91981\",\n    \"workflow\": \"consumer_onboarding\",\n    \"workflow_id\": \"bae0cef5-9087-421f-8302-7eb5d0d07dd6\",\n    \"workflow_version\": \"3.67.0\",\n    \"eval_source\": \"API\",\n    \"eval_id\": \"c82eb081-bbd1-40c3-a1ab-ba8fea44d5d2\",\n    \"eval_start_time\": \"2026-02-01T00:33:21.867206442Z\",\n    \"eval_end_time\": \"2026-02-01T00:33:22.026986964Z\",\n    \"decision\": \"REJECT\",\n    \"decision_at\": \"2026-02-01T00:33:22.02646299Z\",\n    \"status\": \"CLOSED\",\n    \"sub_status\": \"Reject\",\n    \"tags\": [\n        \"Digital Intelligence Error\"\n    ],\n    \"notes\": \"\",\n    \"review_queues\": [],\n    \"data_enrichments\": [\n        {\n            \"enrichment_name\": \"Socure Digital Intelligence\",\n            \"enrichment_endpoint\": \"https://sandbox.socure.com/api/3.0/EmailAuthScore\",\n            \"enrichment_provider\": \"Socure\",\n            \"status_code\": 400,\n            \"request\": {\n                \"city\": \"Piscataway\",\n                \"country\": \"US\",\n                \"dob\": \"1992-06-16\",\n                \"email\": \"kata.ste@example.com\",\n                \"firstName\": \"Kara\",\n                \"mobileNumber\": \"+19998876227\",\n                \"modules\": [\n                    \"digitalintelligence\"\n                ],\n                \"nationalId\": \"888478678\",\n                \"parentTxnId\": \"c82eb081-bbd1-40c3-a1ab-ba8fea44d5d2\",\n                \"physicalAddress\": \"4302 Beechwood Avenue\",\n                \"riskOSId\": \"92c77e86-7214-4de4-aabf-065d23f91981\",\n                \"state\": \"NJ\",\n                \"surName\": \"Ste\",\n                \"userId\": \"ID_57f4118f-3766-492f-b99c-27190f75f66f\",\n                \"workflow\": \"consumer_onboarding\",\n                \"zip\": \"08854\"\n            },\n            \"response\": {\n                \"response\": \"{\\\"status\\\":\\\"Error\\\",\\\"referenceId\\\":\\\"dce939eb-8772-488c-8544-76f904c9705d\\\",\\\"data\\\":{\\\"parameters\\\":[\\\"Missing required parameters for module: DigitalIntelligence\\\"]},\\\"customerProfile\\\":{\\\"userId\\\":\\\"ID_57f4118f-3766-492f-b99c-27190f75f66f\\\"},\\\"msg\\\":\\\"Invalid request. Please check for missing required parameters and resubmit the transaction.\\\"}\"\n            },\n            \"is_source_cache\": false,\n            \"total_attempts\": 1\n        }\n    ],\n    \"eval_status\": \"evaluation_completed\",\n    \"environment_name\": \"Sandbox\"\n}"
+    }
+  ]
+}

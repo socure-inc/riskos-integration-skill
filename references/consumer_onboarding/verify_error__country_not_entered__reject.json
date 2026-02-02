@@ -1,0 +1,143 @@
+{
+  "name": "Verify Error - Country Not Entered | REJECT",
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "bearer": [
+        {
+          "key": "token",
+          "value": "86624c51-86c6-4b68-be5b-6860dfc82d60",
+          "type": "string"
+        }
+      ]
+    },
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\": \"consumer_onboarding\",\n    \"data\": {\n        \"individual\": {\n            \"id\": \"ID_{{$randomUUID}}\",\n            \"given_name\": \"Rhianna\",\n            \"family_name\": \"Nathan\",\n            \"national_id\": \"986299715\",\n            \"date_of_birth\": \"1993-10-10\",\n            \"email\": \"rhianna.nathan@example.com\",\n            \"phone_number\": \"+15105173551\",\n            \"address\": {\n                \"line_1\": \"1256 Marietta Street\",\n                \"line_2\": \"\",\n                \"locality\": \"Santa Rosa\",\n                \"major_admin_division\": \"CA\",\n                \"country\": \"\",\n                \"postal_code\": \"95401\"\n            },\n            \"di_session_token\": \"8ceed175-37ae-4efghajskcvhq75-b7fc5d7c1799ertyuiosjbvdbfc2-23r5tresdf\"\n        }\n    }\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+      "protocol": "https",
+      "host": [
+        "riskos",
+        "sandbox",
+        "socure",
+        "com"
+      ],
+      "path": [
+        "api",
+        "evaluation"
+      ]
+    }
+  },
+  "response": [
+    {
+      "name": "Verify Error - Country Not Entered | REJECT",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"{{$randomUUID}}\",\n    \"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\": \"consumer_onboarding\",\n    \"data\": {\n        \"individual\": {\n            \"id\": \"ID_{{$randomUUID}}\",\n            \"given_name\": \"Rhianna\",\n            \"family_name\": \"Nathan\",\n            \"national_id\": \"986299715\",\n            \"date_of_birth\": \"1993-10-10\",\n            \"email\": \"rhianna.nathan@example.com\",\n            \"phone_number\": \"+15105173551\",\n            \"address\": {\n                \"line_1\": \"1256 Marietta Street\",\n                \"line_2\": \"\",\n                \"locality\": \"Santa Rosa\",\n                \"major_admin_division\": \"CA\",\n                \"country\": \"\",\n                \"postal_code\": \"95401\"\n            },\n            \"di_session_token\": \"8ceed175-37ae-4efghajskcvhq75-b7fc5d7c1799ertyuiosjbvdbfc2-23r5tresdf\"\n        }\n    }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+          "protocol": "https",
+          "host": [
+            "riskos",
+            "sandbox",
+            "socure",
+            "com"
+          ],
+          "path": [
+            "api",
+            "evaluation"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, max-age=0"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "'self'"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Day",
+          "value": "1000"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Window",
+          "value": "10"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Day",
+          "value": "999"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Window",
+          "value": "9"
+        },
+        {
+          "key": "X-Request-Id",
+          "value": "8ab26f81-67da-4e45-bd97-c7ac194d72f7"
+        },
+        {
+          "key": "Date",
+          "value": "Sun, 01 Feb 2026 00:06:38 GMT"
+        },
+        {
+          "key": "Via",
+          "value": "1.1 google"
+        },
+        {
+          "key": "Alt-Svc",
+          "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+        },
+        {
+          "key": "Transfer-Encoding",
+          "value": "chunked"
+        }
+      ],
+      "cookie": [],
+      "body": "{\n    \"id\": \"4ce343a0-0c1b-437b-8d3a-e0f93c76e683\",\n    \"workflow\": \"consumer_onboarding\",\n    \"workflow_id\": \"9a74024b-a61e-4f85-b440-ebbdd9b616ec\",\n    \"workflow_version\": \"3.61.0\",\n    \"eval_source\": \"API\",\n    \"eval_id\": \"8ab26f81-67da-4e45-bd97-c7ac194d72f7\",\n    \"eval_start_time\": \"2026-02-01T00:06:38.060038038Z\",\n    \"eval_end_time\": \"2026-02-01T00:06:38.238975364Z\",\n    \"decision\": \"REJECT\",\n    \"decision_at\": \"2026-02-01T00:06:38.238845784Z\",\n    \"status\": \"CLOSED\",\n    \"sub_status\": \"Reject\",\n    \"tags\": [\n        \"Verify Error\",\n        \"Verify Reject\"\n    ],\n    \"notes\": \"\",\n    \"review_queues\": [],\n    \"data_enrichments\": [\n        {\n            \"enrichment_name\": \"Socure Digital Intelligence\",\n            \"enrichment_endpoint\": \"https://sandbox.socure.com/api/3.0/EmailAuthScore\",\n            \"enrichment_provider\": \"Socure\",\n            \"status_code\": 200,\n            \"request\": {\n                \"city\": \"Santa Rosa\",\n                \"deviceSessionId\": \"8ceed175-37ae-4efghajskcvhq75-b7fc5d7c1799ertyuiosjbvdbfc2-23r5tresdf\",\n                \"dob\": \"1993-10-10\",\n                \"email\": \"rhianna.nathan@example.com\",\n                \"firstName\": \"Rhianna\",\n                \"mobileNumber\": \"+15105173551\",\n                \"modules\": [\n                    \"digitalintelligence\"\n                ],\n                \"nationalId\": \"986299715\",\n                \"parentTxnId\": \"8ab26f81-67da-4e45-bd97-c7ac194d72f7\",\n                \"physicalAddress\": \"1256 Marietta Street\",\n                \"riskOSId\": \"4ce343a0-0c1b-437b-8d3a-e0f93c76e683\",\n                \"state\": \"CA\",\n                \"surName\": \"Nathan\",\n                \"userId\": \"ID_8601bb6a-59e5-445a-96d6-2a02cee6d39f\",\n                \"workflow\": \"consumer_onboarding\",\n                \"zip\": \"95401\"\n            },\n            \"response\": {\n                \"customerProfile\": {\n                    \"userId\": \"ID_8601bb6a-59e5-445a-96d6-2a02cee6d39f\"\n                },\n                \"digitalIntelligence\": {\n                    \"behavioral\": {\n                        \"aggregations\": {\n                            \"blurCount\": 3,\n                            \"clickCount\": 3,\n                            \"focusCount\": 0,\n                            \"inputChangeCount\": 6,\n                            \"pasteCount\": 0,\n                            \"submissionCount\": 1,\n                            \"totalEventCount\": 26\n                        },\n                        \"duration\": 120910,\n                        \"serverCreated\": \"2021-09-01T11:19:58.796Z\",\n                        \"serverUpdated\": \"2021-09-11T16:19:58.796Z\",\n                        \"sessionId\": \"d34304a6-a726-4dec-b1cd-9c4a3c192a0d\",\n                        \"source\": \"https://example.com/\"\n                    },\n                    \"device\": {\n                        \"attributes\": {\n                            \"androidAttributes\": {\n                                \"isRooted\": false,\n                                \"mobileNetwork\": [\n                                    {\n                                        \"carrierName\": \"T-Mobile\",\n                                        \"isoCountryCode\": \"us\"\n                                    }\n                                ]\n                            },\n                            \"battery\": {\n                                \"batteryLevel\": 0.47,\n                                \"batteryState\": \"charging\"\n                            },\n                            \"deviceContext\": \"homepage\",\n                            \"deviceManufacturer\": \"Apple\",\n                            \"deviceModel\": \"iphone14,7\",\n                            \"devicePixelRatio\": 1.5,\n                            \"deviceType\": \"tablet\",\n                            \"iOSAttributes\": {\n                                \"isRooted\": false,\n                                \"mobileNetwork\": [\n                                    {\n                                        \"carrierName\": \"T-Mobile\",\n                                        \"isoCountryCode\": \"us\"\n                                    }\n                                ]\n                            },\n                            \"isEmulator\": false,\n                            \"language\": \"en-US\",\n                            \"location\": {\n                                \"altitude\": 998.2,\n                                \"bearing\": 32,\n                                \"bearingAccuracy\": 2.1,\n                                \"horizontalAccuracy\": 2.1,\n                                \"latitude\": 41.50854591662628,\n                                \"longitude\": -81.69534315646631,\n                                \"speed\": 1.3,\n                                \"speedAccuracy\": 0.2,\n                                \"verticalAccuracy\": 0\n                            },\n                            \"network\": {\n                                \"vpnStatus\": true\n                            },\n                            \"os\": \"iOS\",\n                            \"osVersion\": \"17\",\n                            \"platform\": \"iOS\",\n                            \"screenHeight\": 1080,\n                            \"screenWidth\": 1920,\n                            \"sdkVersion\": \"3.0.1\",\n                            \"timeZone\": \"America/New_York\",\n                            \"timeZoneOffset\": -480,\n                            \"viewportHeight\": 400,\n                            \"viewportWidth\": 600,\n                            \"webAttributes\": {\n                                \"browser\": \"Google Chrome\",\n                                \"browserVersion\": \"116\",\n                                \"userAgent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21A5291h [FBAN/FBIOS;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/17.0;FBSS/3;FBID/phone;FBLC/fr_FR;FBOP/5]\",\n                                \"userAgentExtractionRequired\": true\n                            }\n                        },\n                        \"computed\": {\n                            \"isVirtualMachine\": false,\n                            \"statisticalId\": \"9349d69fef75cd356744293487462f8cd912\"\n                        },\n                        \"deviceCaptureAt\": \"2023-10-24T15:55:17.368756891Z\",\n                        \"history\": {\n                            \"daysSeen\": [\n                                \"2023-10-24\"\n                            ],\n                            \"firstSeen\": \"2023-10-24T15:55:16.368Z\",\n                            \"ips\": [\n                                \"78.32.11.221\",\n                                \"70.45.2.1\"\n                            ],\n                            \"isps\": [\n                                \"RogersCable\",\n                                \"T-Mobile\"\n                            ],\n                            \"lastSeen\": \"2023-10-24T15:55:16.368Z\",\n                            \"networkLocations\": [\n                                \"chicago, il\",\n                                \"new york, ny\",\n                                \"paris, fr\"\n                            ]\n                        },\n                        \"id\": \"234ac3ff-3ed1-42de-8f33-8f332febfa54\",\n                        \"network\": {\n                            \"asn\": 27364,\n                            \"asnName\": \"armstrong\",\n                            \"connectionIp\": \"38.48.122.126\",\n                            \"domainName\": \"zoominternet.net\",\n                            \"forwardedForIps\": [\n                                \"78.32.11.221\",\n                                \"70.45.2.1\"\n                            ],\n                            \"isConsumerPrivacy\": false,\n                            \"isMobileCarrier\": true,\n                            \"isProxy\": false,\n                            \"isRiskyNetwork\": false,\n                            \"isTor\": false,\n                            \"isVpn\": false,\n                            \"isp\": \"comcast\",\n                            \"ispType\": \"home\",\n                            \"networkLocation\": {\n                                \"city\": \"Tacoma\",\n                                \"continentCode\": \"na\",\n                                \"countryCode\": \"US\",\n                                \"gmtOffset\": \"-0400\",\n                                \"latitude\": 47.2529001,\n                                \"longitude\": -122.4443,\n                                \"metroCode\": 819,\n                                \"postalCode\": \"98401\",\n                                \"region\": \"WA\",\n                                \"timezoneName\": \"America/New_York\"\n                            },\n                            \"org\": \"comcast\",\n                            \"realIp\": \"38.48.122.126\",\n                            \"speed\": \"cable\",\n                            \"webRtcInternalIp\": \"192.168.1.85\",\n                            \"webRtcPublicIp\": \"176.124.54.12\"\n                        },\n                        \"sessionCreatedAt\": \"2023-10-24T15:55:16.368492137Z\"\n                    },\n                    \"velocityMetrics\": {\n                        \"historicalCount\": {\n                            \"email\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"firstName\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"lastName\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"mobileNumber\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            }\n                        }\n                    }\n                },\n                \"referenceId\": \"ecfecbaf-f6de-4c7f-ba02-0f7683dc1a5b\"\n            },\n            \"is_source_cache\": false,\n            \"total_attempts\": 1\n        },\n        {\n            \"enrichment_name\": \"Socure Verify\",\n            \"enrichment_endpoint\": \"https://sandbox.socure.com/api/3.0/EmailAuthScore\",\n            \"enrichment_provider\": \"Socure\",\n            \"status_code\": 400,\n            \"request\": {\n                \"city\": \"Santa Rosa\",\n                \"dob\": \"1993-10-10\",\n                \"email\": \"rhianna.nathan@example.com\",\n                \"firstName\": \"Rhianna\",\n                \"mobileNumber\": \"+15105173551\",\n                \"modules\": [\n                    \"kyc\"\n                ],\n                \"nationalId\": \"986299715\",\n                \"parentTxnId\": \"8ab26f81-67da-4e45-bd97-c7ac194d72f7\",\n                \"physicalAddress\": \"1256 Marietta Street\",\n                \"riskOSId\": \"4ce343a0-0c1b-437b-8d3a-e0f93c76e683\",\n                \"state\": \"CA\",\n                \"surName\": \"Nathan\",\n                \"userId\": \"ID_8601bb6a-59e5-445a-96d6-2a02cee6d39f\",\n                \"workflow\": \"consumer_onboarding\",\n                \"zip\": \"95401\"\n            },\n            \"response\": {\n                \"response\": \"{\\\"status\\\":\\\"Error\\\",\\\"referenceId\\\":\\\"2afb1b8c-45f9-478b-8ff2-23ce31e9033a\\\",\\\"data\\\":{\\\"parameters\\\":[\\\"Missing required parameters for module: KYC\\\"]},\\\"customerProfile\\\":{\\\"userId\\\":\\\"ID_8601bb6a-59e5-445a-96d6-2a02cee6d39f\\\"},\\\"msg\\\":\\\"Invalid request. Please check for missing required parameters and resubmit the transaction.\\\"}\"\n            },\n            \"is_source_cache\": false,\n            \"total_attempts\": 1\n        }\n    ],\n    \"eval_status\": \"evaluation_completed\",\n    \"score\": 11,\n    \"environment_name\": \"Sandbox\"\n}"
+    }
+  ]
+}

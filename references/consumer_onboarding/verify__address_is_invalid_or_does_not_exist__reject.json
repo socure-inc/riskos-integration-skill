@@ -1,0 +1,143 @@
+{
+  "name": "Verify - Address is invalid or does not exist | REJECT",
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "bearer": [
+        {
+          "key": "token",
+          "value": "86624c51-86c6-4b68-be5b-6860dfc82d60",
+          "type": "string"
+        }
+      ]
+    },
+    "method": "POST",
+    "header": [],
+    "body": {
+      "mode": "raw",
+      "raw": "{\n    \"id\": \"onb_{{$randomUUID}}\",\n\t\"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\" : \"consumer_onboarding\",\n\t\"data\": {\n        \"individual\": {\n\t\t\t\"id\": \"id_{{$randomUUID}}\",\n            \"given_name\": \"Richard\",\n\t\t\t\"family_name\": \"Sherman\", \n\t\t\t\"national_id\": \"987771460\", \n\t\t\t\"date_of_birth\": \"1980-03-03\",\n\t\t\t\"email\": \"richard.sherman@fakemail.com\", \n\t\t\t\"phone_number\": \"+15555556001\", \n\t\t\t\"address\": {\n\t\t\t\t\"line_1\": \"8884 Alwal Blvd\",\n\t\t\t\t\"line_2\": \"Apt 1601\",\n\t\t\t\t\"country\": \"US\",\n\t\t\t\t\"postal_code\": \"76541\", \n\t\t\t\t\"major_admin_division\": \"TX\", \n\t\t\t\t\"locality\": \"Houston\" \n\t\t\t},\n            \"di_session_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMisdfbbeCbIJKciX44s\"\n\t\t}\n\t}\n}",
+      "options": {
+        "raw": {
+          "language": "json"
+        }
+      }
+    },
+    "url": {
+      "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+      "protocol": "https",
+      "host": [
+        "riskos",
+        "sandbox",
+        "socure",
+        "com"
+      ],
+      "path": [
+        "api",
+        "evaluation"
+      ]
+    }
+  },
+  "response": [
+    {
+      "name": "Verify - Address is invalid or does not exist | REJECT",
+      "originalRequest": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"onb_{{$randomUUID}}\",\n\t\"timestamp\": \"{{$isoTimestamp}}\",\n    \"workflow\" : \"consumer_onboarding\",\n\t\"data\": {\n        \"individual\": {\n\t\t\t\"id\": \"id_{{$randomUUID}}\",\n            \"given_name\": \"Richard\",\n\t\t\t\"family_name\": \"Sherman\", \n\t\t\t\"national_id\": \"987771460\", \n\t\t\t\"date_of_birth\": \"1980-03-03\",\n\t\t\t\"email\": \"richard.sherman@fakemail.com\", \n\t\t\t\"phone_number\": \"+15555556001\", \n\t\t\t\"address\": {\n\t\t\t\t\"line_1\": \"8884 Alwal Blvd\",\n\t\t\t\t\"line_2\": \"Apt 1601\",\n\t\t\t\t\"country\": \"US\",\n\t\t\t\t\"postal_code\": \"76541\", \n\t\t\t\t\"major_admin_division\": \"TX\", \n\t\t\t\t\"locality\": \"Houston\" \n\t\t\t},\n            \"di_session_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMisdfbbeCbIJKciX44s\"\n\t\t}\n\t}\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://riskos.sandbox.socure.com/api/evaluation",
+          "protocol": "https",
+          "host": [
+            "riskos",
+            "sandbox",
+            "socure",
+            "com"
+          ],
+          "path": [
+            "api",
+            "evaluation"
+          ]
+        }
+      },
+      "status": "OK",
+      "code": 200,
+      "_postman_previewlanguage": null,
+      "header": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, max-age=0"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "'self'"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Day",
+          "value": "1000"
+        },
+        {
+          "key": "X-Ratelimit-Limit-Window",
+          "value": "10"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Day",
+          "value": "999"
+        },
+        {
+          "key": "X-Ratelimit-Remaining-Window",
+          "value": "9"
+        },
+        {
+          "key": "X-Request-Id",
+          "value": "3ebcfb07-a22f-4dc8-bf60-6e3fd673dee9"
+        },
+        {
+          "key": "Date",
+          "value": "Sat, 31 Jan 2026 23:26:45 GMT"
+        },
+        {
+          "key": "Via",
+          "value": "1.1 google"
+        },
+        {
+          "key": "Alt-Svc",
+          "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+        },
+        {
+          "key": "Transfer-Encoding",
+          "value": "chunked"
+        }
+      ],
+      "cookie": [],
+      "body": "{\n    \"id\": \"onb_ded13296-81f8-46e1-b790-b7f83a805e0d\",\n    \"workflow\": \"consumer_onboarding\",\n    \"workflow_id\": \"9a74024b-a61e-4f85-b440-ebbdd9b616ec\",\n    \"workflow_version\": \"3.61.0\",\n    \"eval_source\": \"API\",\n    \"eval_id\": \"3ebcfb07-a22f-4dc8-bf60-6e3fd673dee9\",\n    \"eval_start_time\": \"2026-01-31T23:26:45.694889657Z\",\n    \"eval_end_time\": \"2026-01-31T23:26:45.900780896Z\",\n    \"decision\": \"REJECT\",\n    \"decision_at\": \"2026-01-31T23:26:45.900598459Z\",\n    \"status\": \"CLOSED\",\n    \"sub_status\": \"Reject\",\n    \"tags\": [\n        \"Address is Invalid or Commercial or PO box or Prison - Reject\",\n        \"Verify Reject\"\n    ],\n    \"notes\": \"\",\n    \"review_queues\": [],\n    \"data_enrichments\": [\n        {\n            \"enrichment_name\": \"Socure Digital Intelligence\",\n            \"enrichment_endpoint\": \"https://sandbox.socure.com/api/3.0/EmailAuthScore\",\n            \"enrichment_provider\": \"Socure\",\n            \"status_code\": 200,\n            \"request\": {\n                \"city\": \"Houston\",\n                \"country\": \"US\",\n                \"deviceSessionId\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMisdfbbeCbIJKciX44s\",\n                \"dob\": \"1980-03-03\",\n                \"email\": \"richard.sherman@fakemail.com\",\n                \"firstName\": \"Richard\",\n                \"mobileNumber\": \"+15555556001\",\n                \"modules\": [\n                    \"digitalintelligence\"\n                ],\n                \"nationalId\": \"987771460\",\n                \"parentTxnId\": \"3ebcfb07-a22f-4dc8-bf60-6e3fd673dee9\",\n                \"physicalAddress\": \"8884 Alwal Blvd\",\n                \"physicalAddress2\": \"Apt 1601\",\n                \"riskOSId\": \"onb_ded13296-81f8-46e1-b790-b7f83a805e0d\",\n                \"state\": \"TX\",\n                \"surName\": \"Sherman\",\n                \"userId\": \"id_69ba342b-d768-4bef-ab77-e794bbe979d8\",\n                \"workflow\": \"consumer_onboarding\",\n                \"zip\": \"76541\"\n            },\n            \"response\": {\n                \"customerProfile\": {\n                    \"userId\": \"id_69ba342b-d768-4bef-ab77-e794bbe979d8\"\n                },\n                \"digitalIntelligence\": {\n                    \"behavioral\": {\n                        \"aggregations\": {\n                            \"blurCount\": 3,\n                            \"clickCount\": 3,\n                            \"focusCount\": 0,\n                            \"inputChangeCount\": 6,\n                            \"pasteCount\": 0,\n                            \"submissionCount\": 1,\n                            \"totalEventCount\": 26\n                        },\n                        \"duration\": 120910,\n                        \"serverCreated\": \"2021-09-01T11:19:58.796Z\",\n                        \"serverUpdated\": \"2021-09-11T16:19:58.796Z\",\n                        \"sessionId\": \"d34304a6-a726-4dec-b1cd-9c4a3c192a0d\",\n                        \"source\": \"https://example.com/\"\n                    },\n                    \"device\": {\n                        \"attributes\": {\n                            \"androidAttributes\": {\n                                \"isRooted\": false,\n                                \"mobileNetwork\": [\n                                    {\n                                        \"carrierName\": \"T-Mobile\",\n                                        \"isoCountryCode\": \"us\"\n                                    }\n                                ]\n                            },\n                            \"battery\": {\n                                \"batteryLevel\": 0.47,\n                                \"batteryState\": \"charging\"\n                            },\n                            \"deviceContext\": \"homepage\",\n                            \"deviceManufacturer\": \"Apple\",\n                            \"deviceModel\": \"iphone14,7\",\n                            \"devicePixelRatio\": 1.5,\n                            \"deviceType\": \"tablet\",\n                            \"iOSAttributes\": {\n                                \"isRooted\": false,\n                                \"mobileNetwork\": [\n                                    {\n                                        \"carrierName\": \"T-Mobile\",\n                                        \"isoCountryCode\": \"us\"\n                                    }\n                                ]\n                            },\n                            \"isEmulator\": false,\n                            \"language\": \"en-US\",\n                            \"location\": {\n                                \"altitude\": 998.2,\n                                \"bearing\": 32,\n                                \"bearingAccuracy\": 2.1,\n                                \"horizontalAccuracy\": 2.1,\n                                \"latitude\": 41.50854591662628,\n                                \"longitude\": -81.69534315646631,\n                                \"speed\": 1.3,\n                                \"speedAccuracy\": 0.2,\n                                \"verticalAccuracy\": 0\n                            },\n                            \"network\": {\n                                \"vpnStatus\": true\n                            },\n                            \"os\": \"iOS\",\n                            \"osVersion\": \"17\",\n                            \"platform\": \"iOS\",\n                            \"screenHeight\": 1080,\n                            \"screenWidth\": 1920,\n                            \"sdkVersion\": \"3.0.1\",\n                            \"timeZone\": \"America/New_York\",\n                            \"timeZoneOffset\": -480,\n                            \"viewportHeight\": 400,\n                            \"viewportWidth\": 600,\n                            \"webAttributes\": {\n                                \"browser\": \"Google Chrome\",\n                                \"browserVersion\": \"116\",\n                                \"userAgent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21A5291h [FBAN/FBIOS;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/17.0;FBSS/3;FBID/phone;FBLC/fr_FR;FBOP/5]\",\n                                \"userAgentExtractionRequired\": true\n                            }\n                        },\n                        \"computed\": {\n                            \"isVirtualMachine\": false,\n                            \"statisticalId\": \"9349d69fef75cd356744293487462f8cd912\"\n                        },\n                        \"deviceCaptureAt\": \"2023-10-24T15:55:17.368756891Z\",\n                        \"history\": {\n                            \"daysSeen\": [\n                                \"2023-10-24\"\n                            ],\n                            \"firstSeen\": \"2023-10-24T15:55:16.368Z\",\n                            \"ips\": [\n                                \"78.32.11.221\",\n                                \"70.45.2.1\"\n                            ],\n                            \"isps\": [\n                                \"RogersCable\",\n                                \"T-Mobile\"\n                            ],\n                            \"lastSeen\": \"2023-10-24T15:55:16.368Z\",\n                            \"networkLocations\": [\n                                \"chicago, il\",\n                                \"new york, ny\",\n                                \"paris, fr\"\n                            ]\n                        },\n                        \"id\": \"234ac3ff-3ed1-42de-8f33-8f332febfa54\",\n                        \"network\": {\n                            \"asn\": 27364,\n                            \"asnName\": \"armstrong\",\n                            \"connectionIp\": \"38.48.122.126\",\n                            \"domainName\": \"zoominternet.net\",\n                            \"forwardedForIps\": [\n                                \"78.32.11.221\",\n                                \"70.45.2.1\"\n                            ],\n                            \"isConsumerPrivacy\": false,\n                            \"isMobileCarrier\": true,\n                            \"isProxy\": false,\n                            \"isRiskyNetwork\": false,\n                            \"isTor\": false,\n                            \"isVpn\": false,\n                            \"isp\": \"comcast\",\n                            \"ispType\": \"home\",\n                            \"networkLocation\": {\n                                \"city\": \"Tacoma\",\n                                \"continentCode\": \"na\",\n                                \"countryCode\": \"US\",\n                                \"gmtOffset\": \"-0400\",\n                                \"latitude\": 47.2529001,\n                                \"longitude\": -122.4443,\n                                \"metroCode\": 819,\n                                \"postalCode\": \"98401\",\n                                \"region\": \"WA\",\n                                \"timezoneName\": \"America/New_York\"\n                            },\n                            \"org\": \"comcast\",\n                            \"realIp\": \"38.48.122.126\",\n                            \"speed\": \"cable\",\n                            \"webRtcInternalIp\": \"192.168.1.85\",\n                            \"webRtcPublicIp\": \"176.124.54.12\"\n                        },\n                        \"sessionCreatedAt\": \"2023-10-24T15:55:16.368492137Z\"\n                    },\n                    \"velocityMetrics\": {\n                        \"historicalCount\": {\n                            \"email\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"firstName\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"lastName\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            },\n                            \"mobileNumber\": {\n                                \"uniqueCount\": 3,\n                                \"uniqueSharePercent\": 50\n                            }\n                        }\n                    }\n                },\n                \"referenceId\": \"07e14b31-982f-489d-99e2-d2a84027db7c\"\n            },\n            \"is_source_cache\": false,\n            \"total_attempts\": 1\n        },\n        {\n            \"enrichment_name\": \"Socure Verify\",\n            \"enrichment_endpoint\": \"https://sandbox.socure.com/api/3.0/EmailAuthScore\",\n            \"enrichment_provider\": \"Socure\",\n            \"status_code\": 200,\n            \"request\": {\n                \"city\": \"Houston\",\n                \"country\": \"US\",\n                \"dob\": \"1980-03-03\",\n                \"email\": \"richard.sherman@fakemail.com\",\n                \"firstName\": \"Richard\",\n                \"mobileNumber\": \"+15555556001\",\n                \"modules\": [\n                    \"kyc\"\n                ],\n                \"nationalId\": \"987771460\",\n                \"parentTxnId\": \"3ebcfb07-a22f-4dc8-bf60-6e3fd673dee9\",\n                \"physicalAddress\": \"8884 Alwal Blvd\",\n                \"physicalAddress2\": \"Apt 1601\",\n                \"riskOSId\": \"onb_ded13296-81f8-46e1-b790-b7f83a805e0d\",\n                \"state\": \"TX\",\n                \"surName\": \"Sherman\",\n                \"userId\": \"id_69ba342b-d768-4bef-ab77-e794bbe979d8\",\n                \"workflow\": \"consumer_onboarding\",\n                \"zip\": \"76541\"\n            },\n            \"response\": {\n                \"customerProfile\": {\n                    \"userId\": \"id_69ba342b-d768-4bef-ab77-e794bbe979d8\"\n                },\n                \"kyc\": {\n                    \"fieldValidations\": {\n                        \"city\": 0.99,\n                        \"dob\": 0.99,\n                        \"firstName\": 0.99,\n                        \"mobileNumber\": 0.99,\n                        \"ssn\": 0.99,\n                        \"state\": 0.99,\n                        \"streetAddress\": 0.01,\n                        \"surName\": 0.99,\n                        \"zip\": 0.99\n                    },\n                    \"reasonCodes\": [\n                        \"R916\"\n                    ],\n                    \"sourceAttribution\": [\n                        \"Credit\",\n                        \"Government\",\n                        \"Education\"\n                    ]\n                },\n                \"referenceId\": \"7ab6019a-6028-4671-8d35-f25b8e976429\"\n            },\n            \"is_source_cache\": false,\n            \"total_attempts\": 1\n        }\n    ],\n    \"eval_status\": \"evaluation_completed\",\n    \"score\": 11,\n    \"environment_name\": \"Sandbox\"\n}"
+    }
+  ]
+}

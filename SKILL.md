@@ -25,6 +25,9 @@ Find the live workflow — use the list_workflows tool to identify active workfl
 Read the Integration Guides for the selected use case using ask_docs tool
 Use the get_checklist tool to retrieve the checklist for the selected use case and work with me through the integration checklist 
 Read the OpenAPI specification stored at references/riskos-api-spec.json file. There are also number of specific postman examples for various use cases in the references directory, check if there is a relevant one
+Check if there is a Postman example for the selected use case in the references folder:
+   * references/consumer_onboarding - Postman collection for Consumer Onboarding use case. Each file represents a different example
+If there is no Postman example for the selected use case, use the consumer onboarding example
 
 ### Guidelines
 You MUST include all references provided by OWL in your answer.

@@ -1,5 +1,4 @@
 # RiskOS reference documents:
 
 * riskos-api-spec.json - RiskOS OpenAPI JSON specification
-* postman_individual_onboarding - Postman example for Individual Onboarding Usecase
-
+* consumer_onboarding - Postman collection for Consumer Onboarding use case. Each file represents a different example
