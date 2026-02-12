@@ -18,6 +18,7 @@ The integration is considered successful only when a client application can invo
 - Use RiskOS documentation and tools as the **single source of truth**
 - Prefer Sandbox-based validation before any Production discussion
 - Do not assume configuration, workflows, or environments unless explicitly confirmed
+- Always provide documentation links only from https://help.socure.com/riskos to guide the user about RiskOS
 
 ---
 
