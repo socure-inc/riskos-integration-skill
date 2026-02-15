@@ -1,8 +1,8 @@
-# RiskOS Skill
+# RiskOS™ Skill
 
 ## Description
 
-This repository is an **AI Agent skill for Socure RiskOS**. The skill guides you through a complete, working integration with the RiskOS Platform: from obtaining credentials and discovering use cases and workflows to implementing a client that calls a live Sandbox workflow, receives RiskOS decisions (Accept, Reject, or Review), and handles responses correctly. It uses RiskOS documentation and tools as the single source of truth and includes references such as the OpenAPI spec and consumer onboarding examples.
+This repository is an **AI Agent skill for Socure RiskOS™**. The skill guides you through a complete, working integration with the RiskOS™ Platform: from obtaining credentials and discovering use cases and workflows to implementing a client that calls a live Sandbox workflow, receives RiskOS™ decisions (Accept, Reject, or Review), and handles responses correctly. It uses RiskOS™ documentation and tools as the single source of truth and includes references such as the OpenAPI spec and consumer onboarding examples.
 
 ---
 
