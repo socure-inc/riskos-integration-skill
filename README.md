@@ -22,30 +22,30 @@ Installation depends on which agent or IDE you use. Place the skill so the agent
 
 ### Cursor
 
-- **Project:** Copy or clone this repo into `.cursor/skills/riskos-skill/` (or symlink the repo).
-- **User (all projects):** Use `~/.cursor/skills/riskos-skill/`.
+- **Project:** Copy or clone this repo into `.cursor/skills/riskos-integration-skill/` (or symlink the repo).
+- **User (all projects):** Use `~/.cursor/skills/riskos-integration-skill/`.
 - **From GitHub:** Cursor Settings → Rules → Add Rule → **Remote Rule (Github)** → enter this repo’s URL.
 
 Cursor also reads skills from `.claude/skills/` and `.codex/skills/` for compatibility. See [Cursor Docs: Agent Skills](https://cursor.com/docs/context/skills).
 
 ### Windsurf (WB Code)
 
-- **Workspace:** `.windsurf/skills/riskos-skill/` (copy or symlink this repo there).
-- **Global:** `~/.codeium/windsurf/skills/riskos-skill/`.
+- **Workspace:** `.windsurf/skills/riskos-integration-skill/` (copy or symlink this repo there).
+- **Global:** `~/.codeium/windsurf/skills/riskos-integration-skill/`.
 
 You can also create the skill via the Cascade panel → ⋮ → Skills → + Workspace or + Global. See [Windsurf Cascade Skills](https://docs.windsurf.com/windsurf/cascade/skills).
 
 ### Claude Code
 
-- **Project:** `.claude/skills/riskos-skill/`
-- **User:** `~/.claude/skills/riskos-skill/`
+- **Project:** `.claude/skills/riskos-integration-skill/`
+- **User:** `~/.claude/skills/riskos-integration-skill/`
 
 See [Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview).
 
 ### Codex CLI (OpenAI)
 
-- **Project:** `.codex/skills/riskos-skill/` or `.agents/skills/riskos-skill/`
-- **User:** `~/.codex/skills/riskos-skill/`
+- **Project:** `.codex/skills/riskos-integration-skill/` or `.agents/skills/riskos-skill/`
+- **User:** `~/.codex/skills/riskos-integration-skill/`
 
 Codex can also install skills via the built-in skill installer. See [OpenAI Codex Skills](https://developers.openai.com/codex/skills).
 
@@ -54,7 +54,7 @@ Codex can also install skills via the built-in skill installer. See [OpenAI Code
 From the repo root or with a GitHub reference:
 
 ```bash
-npx skills add <owner>/riskos-skill
+npx skills add <owner>/riskos-integration-skill
 ```
 
 Use `-g` for user/global scope. Targets Cursor, Claude Code, Codex, and other agents that support the standard. See [Install Agent Skills](https://installagentskills.com/) and [agentskills.io](https://agentskills.io).
