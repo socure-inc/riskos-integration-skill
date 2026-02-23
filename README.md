@@ -1,4 +1,4 @@
-# RiskOS™ Skill
+# RiskOS™ Integration Skill
 
 ## Description
 
