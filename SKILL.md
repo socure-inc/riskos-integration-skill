@@ -1,6 +1,6 @@
 ---
 name: riskos-integration-skill
-description: This skill focuses on Socure RiskOS API integreation
+description: This skill focuses on Socure RiskOS API integration
 -----
 
 ## **Objective**
