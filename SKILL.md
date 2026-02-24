@@ -1,7 +1,7 @@
 ---
 name: riskos-integration-skill
-description: This skill focuses on Socure RiskOS API integration
------
+description: "This skill focuses on Socure RiskOS API integration"
+---
 
 ## **Objective**
 
